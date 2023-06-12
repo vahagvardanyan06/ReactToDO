@@ -77,12 +77,24 @@ code {
   padding:16px 0px ;
 }
 
-.todo-app .todo-list-items button{
+.todo-app .todo-list-items .remove_button{
 
   display: block;
   border: none;
   padding: 8px 16px;
   background: #d00;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+
+}
+
+.todo-app .todo-list-items .edit_button{
+
+  display: block;
+  border: none;
+  padding: 8px 16px;
+  background: yellowgreen;
   border-radius: 8px;
   cursor: pointer;
   color: white;
@@ -118,3 +130,4 @@ code {
 .title{
   color: #b00;
 }
+

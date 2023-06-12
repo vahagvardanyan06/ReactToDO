@@ -1,5 +1,5 @@
 import TodoListItem from "../todo-list-item/TodoListItem";
-const TodoListItems = ({todos, onRemoveTodo,onCopletedTodo})=>{
+const TodoListItems = ({todos,onEditTodo, onRemoveTodo,onCopletedTodo})=>{
 
     return (
         <div className="todo-list-items">

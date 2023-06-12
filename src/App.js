@@ -34,7 +34,21 @@ const reducer = (todos, action) =>{
     })
 
   }else if(action.type ==="REMOVE_ALL_COMPLETED"){
-    return todos.filter(todo=> !todo.isCompleted)
+
+    return todos.filter(todo => !todo.isCompleted)
+
+  }else if(action.type ==="EDIT"){
+
+    return todos.map((todo)=>{
+
+      if(todo.id === action.payload.id){
+        return{
+          ...todo,
+          edit: !todo.edit
+        }
+      }
+    })
+        
   }
 
 }
@@ -58,6 +72,8 @@ function App() {
       />
       <TodoListItems
        todos={todos}
+      
+
        onRemoveTodo={(id)=>{
         dispatch({
           type:"REMOVE",

@@ -1,4 +1,6 @@
-const TodoListItem = ({todos, onRemoveTodo,onCopletedTodo})=>{
+
+
+const TodoListItem = ({todos,onEditTodo, onRemoveTodo,onCopletedTodo})=>{
 
     return todos.map(todo=>{
       return (
@@ -10,8 +12,9 @@ const TodoListItem = ({todos, onRemoveTodo,onCopletedTodo})=>{
                 onChange={() => onCopletedTodo(todo.id)}
                 />
                 <span>{todo.text}</span>
+               {/* <input value={todo.text} type="text"/> */}
               </label>
-              <button onClick={() => onRemoveTodo(todo.id)}>
+              <button className="remove_button" onClick={() => onRemoveTodo(todo.id)}>
                 Remove
               </button>
               </div>         
