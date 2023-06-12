@@ -45,7 +45,7 @@ function App() {
 
   return (
     <div className="todo-app">
-      <h1 >To Do List</h1>
+      <h1 className="title">To Do List</h1>
       <TodoHeader
         onAddTodo={(text)=>{
           dispatch({

@@ -45,15 +45,13 @@ code {
 
 .todo-app .todo-header form button{
   border: none;
-  background: #059405;
+  background:rgb(23, 173, 73);
   color: white;
   border-radius: 0px 8px 8px 0px;
   cursor: pointer;
 }
 
-/* .todo-app .todo-list-items{
 
-} */
 
 .todo-app .todo-list-items .todo-list-item{
   display: flex;
@@ -115,4 +113,8 @@ code {
   color: #5d5d5d;
   font-style: italic;
 
+}
+
+.title{
+  color: #b00;
 }
